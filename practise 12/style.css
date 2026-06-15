@@ -1,26 +1,61 @@
-sub-item-link{
-    text-decoration: none;
+* {
+    box-sizing: border-box;
+    
 }
-.sub-item-link:link{
-color: blue;
-}
-.sub-item-link:visited{
-    color: brown;
-}
-.sub-item-link:hover{
-    color: blueviolet;
-
-}
-.sub-item-link:active{
-    color: black;
-}
-.sub-item-link:focus{
-    outline: 3px solid;
-}
-body{
-    background-color: rgb(97, 56, 56);
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffff0;
     padding: 20px;
+    
 }
-.head{
+.form {
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: rgba(75, 4, 189, 0.35) 0px 5px 15px;
+}
+
+h1 {
     text-align: center;
+}
+
+#form {
+    max-width: 70%;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 10px;
+}
+
+input {
+    border-color: rgb(118, 118, 118);
+}
+
+#personal-info input, #product-info input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+fieldset {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border-color: rgb(118, 118, 118);
+}
+
+textarea {
+    width: 100%;
+    border-color: rgb(118, 118, 118);
+}
+
+#btn-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#submit-btn, #clear-btn {
+    margin: 10px 15px 0;
 }

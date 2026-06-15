@@ -1,0 +1,236 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  line-height: 1.6;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section {
+  padding: 2rem;
+}
+
+#hero {
+  background: #f4f4f4;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.project-card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+
+/* Navigation */
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+nav {
+  position: fixed;   /* locks it relative to the viewport */
+  top: 0;            /* pins it to the very top */
+  width: 100%;       /* spans full width */
+  background: #333;  /* example background color */
+  color: white;      /* text color */
+  z-index: 1000;     /* ensures it stays above other elements */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Hero */
+#hero {
+  background: #f4f4f4;
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+/* Projects Grid */
+#projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.project-card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  background: #fff;
+}
+
+/* Skills */
+#skills ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+/* Contact Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+form input, form textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 0.7rem;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+/* Light Theme Gradient */
+body {
+  background: linear-gradient(135deg, #ffffff, #e0e0e0);
+  color: #333;
+  transition: background 0.6s ease, color 0.6s ease;
+}
+
+/* Dark Theme Gradient */
+body.dark-mode {
+  background: linear-gradient(135deg, #121212, #1e1e1e);
+  color: #f4f4f4;
+}
+
+/* Smooth transition for all sections */
+header, footer, section, .project-card {
+  transition: background 0.6s ease, color 0.6s ease;
+}
+
+img {
+  display: block;        /* makes it a block element */
+  max-width: 100%;       /* responsive: fits within parent */
+  height: auto;          /* keeps proportions */
+  margin: 0 auto;        /* centers horizontally */
+  border: 2px solid #333; /* adds a border */
+  border-radius: 10px; 
+   box-shadow: 0 4px 8px rgba(0,0,0,0.3);  /* rounded corners */
+}
+img:hover {
+  transform: scale(1.05); /* zooms slightly */
+  transition: transform 0.3s ease;
+}
+
+
+/* Optional: animated gradient shift */
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body.dark-mode {
+  background: linear-gradient(270deg, #121212, #2a2a2a, #1e1e1e);
+  background-size: 600% 600%;
+  animation: gradientShift 15s ease infinite;
+}
+
+
+/* --- Responsive Media Queries --- */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #hero {
+    padding: 2rem 1rem;
+  }
+
+  #about {
+    text-align: center;
+  }
+
+  #about img {
+    max-width: 150px;
+    border-radius: 50%;
+  }
+}
+
+
+@media (max-width: 480px) {
+  h1, h2 {
+    font-size: 1.2rem;
+  }
+
+  nav h1 {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.9rem;
+  }
+}
